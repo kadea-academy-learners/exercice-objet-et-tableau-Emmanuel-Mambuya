@@ -15,15 +15,15 @@ const users = [
 	  return []; 
 	}
   
-	const admins = []; // constante pour y mettre les noms des admins
+	const administrateurs = []; // constante pour y mettre les noms des admins
   
 	for (let i = 0; i < users.length; i++) {
 	  if (users[i].estAdmin === true) {
-		admins.push(users[i].nom); // ajoute le nom d'administrateur au tableau
+		administrateurs.push(users[i].nom); // ajoute le nom d'administrateur au tableau
 	  }
 	}
   
-	return admins; // retourne le tableau des admins
+	return administrateurs; // retourner le tableau des admins
   }
   
   module.exports = {
