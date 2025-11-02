@@ -12,11 +12,19 @@ La fonction doit retourner un objet contenant ces trois propriétés :
     - estConnecte (boolean)
 */
 
-function createUser() {
-    
+function createUser(nom, age, estConnecté) {
+    return {
+        nom,
+        age,
+        estConnecté,
+    };
 }
+
+createUser();
 
 module.exports = {
     createUser,
 };
+
+    
 
